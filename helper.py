@@ -1,13 +1,17 @@
 import webbrowser
 from apiclient.discovery import build      
 class API:
-	def __init__(self,keyword,maxlen):
+	def __init__(self,keyword,maxlen,order='relevance',type='video'):
 		self._api_key='AIzaSyDlSP52WUTbhSPggRwcLsGQbrWpymVvcYU'
 		#link to get the api key is in readme file
 		youtube=build('youtube','v3',developerKey=self._api_key)
 		self.keyword=keyword
 		self.maxlen=maxlen
-		req=youtube.search().list(q=self.keyword,part='snippet',type='video',maxResults=self.maxlen)
+		self.order=order
+		self.type=type
+		req=youtube.search().list(q=self.keyword,part='snippet',
+			maxResults=self.maxlen,type=self.type,order=self.order,
+			)
 		self.result=req.execute() 
 	def open_id(self,item_no):
 		return webbrowser.open('https://www.youtube.com/watch?v='+self.result['items'][item_no]['id']['videoId'])
