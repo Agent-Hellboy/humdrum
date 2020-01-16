@@ -15,7 +15,7 @@ def titles(count,title,order,type):
 	l=obj.get_titles()
 	for j,i in enumerate(l):
 		click.echo('{0} > title {1}'.format(j,i))
-	vid=int(input())
+	vid=value = click.prompt('type id for more', type=int)
 	open_link(obj,vid)
 
 
