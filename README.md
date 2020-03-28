@@ -49,10 +49,7 @@ Options:
   --type TEXT      to search for type of video like channel video playlist
   --help           Show this message and exit.
 
-
-
 ```
-
 
 Contributing
 ------------
