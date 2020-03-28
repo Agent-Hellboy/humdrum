@@ -6,15 +6,15 @@ def read(fname):
 
 setup(
     name="humdrum",
-    version="0.0.1",
+    version="0.5",
     author="Prince Roshan",
     author_email="princekrroshan01@gmail.com",
     url="https://github.com/princekrroshan01/humdrum",
     description=("A  CLI tool for youtube data api v3"),
     long_description=read('README.md'),
     license="MIT",
-    py_modules=['cli'],
-    entry_points={'console_scripts': ['humdrum = cli:main']},
+    py_modules=['helper','cli'],
+    entry_points={'console_scripts': ['humdrum = cli:titles']},
     install_requires=['google-api-python-client', 'click'],
     include_package_data=True
 )
