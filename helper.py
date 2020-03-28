@@ -1,5 +1,6 @@
 import webbrowser
-from apiclient.discovery import build      
+from apiclient.discovery import build    
+import os
 class API:
 	def __init__(self,keyword,maxlen,order='relevance',type='video'):
 		self.__API_KEY=os.environ.get('API_KEY')
