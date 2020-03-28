@@ -5,7 +5,7 @@ class API:
 	def __init__(self,keyword,maxlen,order='relevance',type='video'):
 		self.__API_KEY=os.environ.get('API_KEY')
 		#link to get the api key is in readme file
-		youtube=build('youtube','v3',developerKey=self._api_key)
+		youtube=build('youtube','v3',developerKey=self.__API_KEY)
 		self.keyword=keyword
 		self.maxlen=maxlen
 		self.order=order
