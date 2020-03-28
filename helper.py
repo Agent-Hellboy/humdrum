@@ -2,7 +2,7 @@ import webbrowser
 from apiclient.discovery import build      
 class API:
 	def __init__(self,keyword,maxlen,order='relevance',type='video'):
-		self._api_key='AIzaSyDlSP52WUTbhSPggRwcLsGQbrWpymVvcYU'
+		self.__API_KEY=os.environ.get('API_KEY')
 		#link to get the api key is in readme file
 		youtube=build('youtube','v3',developerKey=self._api_key)
 		self.keyword=keyword
