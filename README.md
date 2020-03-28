@@ -7,8 +7,10 @@ get the youtube data v3 api key from https://console.developers.google.com/apis/
 
 make a python alias by typing 
 alias humdrum="python3 (location of file cli.py)" in terminal
+no need to create alias if you download this package using pip
 
 ## using 
+pip install humdrum==0.4
 type humdrum --help in terminal in same working directory
 this will guide you through the process
 
