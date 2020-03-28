@@ -2,7 +2,8 @@
 this a CLI tool for youtube data api v3
 
 ## Prerequisites
-get the youtube data v3 api key from https://console.developers.google.com/apis/
+get the youtube data v3 api key from https://console.developers.google.com/apis/ and set a environment variable with the name API_KEY
+
 
 make a python alias by typing 
 alias humdrum="python3 (location of file cli.py)" in terminal
