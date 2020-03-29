@@ -38,6 +38,21 @@ using
 type humdrum --help in terminal 
 this will guide you through the process
 
+```
+root@prince:~/Humdrum# humdrum --help
+Usage: humdrum [OPTIONS]
+
+Options:
+  --count INTEGER  enter the number of video you are looking for.
+  --title TEXT     enter the title name of video you are looking for
+  --order TEXT     to sort the video by date rating viewCount
+  --type TEXT      to search for type of video like channel video playlist
+  --help           Show this message and exit.
+
+
+
+```
+
 
 Contributing
 ------------
