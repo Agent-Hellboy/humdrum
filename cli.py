@@ -5,11 +5,16 @@ from helper import Api
 
 
 @click.command()
-@click.option('--count', default=5, help='enter the number of video you are looking for.')
-@click.option('--title', prompt='title of the video',
-              help='enter the title name of video you are looking for')
-@click.option('--order', help='to sort the video by date rating viewCount')
-@click.option('--type', help='to search for type of video like channel video playlist')
+@click.option(
+    "--count", default=5, help="enter the number of video you are looking for."
+)
+@click.option(
+    "--title",
+    prompt="title of the video",
+    help="enter the title name of video you are looking for",
+)
+@click.option("--order", help="to sort the video by date rating viewCount")
+@click.option("--type", help="to search for type of video like channel video playlist")
 def titles(count, title, order, type):
     """
     Function which acts as an interface with API wrapper and CLI
@@ -23,8 +28,8 @@ def titles(count, title, order, type):
     obj = Api(title, count, order, type)
     titles = obj.get_titles()
     for j, i in enumerate(titles):
-        click.echo('{0} > title {1}'.format(j, i))
-    vid = click.prompt('type id for more', type=int)
+        click.echo("{0} > title {1}".format(j, i))
+    vid = click.prompt("type id for more", type=int)
     open_link(obj, vid)
 
 
@@ -37,7 +42,9 @@ def ffcall(option, obj, vid):
         des = obj.get_descriptions()  # function to get description of the video
         print(des[vid])
     if option == 1:
-        obj.open_id(vid)  # function to open the video through default browser of the system
+        obj.open_id(
+            vid
+        )  # function to open the video through default browser of the system
 
 
 def open_link(obj, vid):
@@ -47,5 +54,5 @@ def open_link(obj, vid):
         ffcall(option, obj, vid)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     titles()
