@@ -33,7 +33,7 @@ and for windows (https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/o
 
 </br>
 make a python alias by typing 
-``alias humdrum="python3 (location of file cli.py)" in terminal`` <br>
+`` alias humdrum="python3 (location of file cli.py)" in terminal `` <br>
 no need to create alias if you download this package using pip
 
 **using** 
