@@ -31,9 +31,10 @@ Reference for setting environment variable in linux (https://www.redhat.com/sysa
 and for windows (https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0)
 
 
-</br>
+<br>
 Make a python alias by typing 
-``` alias humdrum="python3 (location of file cli.py)" in terminal ``` <br>
+``alias humdrum="python3 (location of file cli.py)" in terminal``
+<br>
 No need to create alias if you download this package using pip
 
 **using** 
