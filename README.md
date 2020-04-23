@@ -24,22 +24,25 @@ Install with pip:
       
       
 **Prerequisites**
-------------
+------------------
 
-get the youtube data v3 api key from (https://console.developers.google.com/apis/) and set a environment variable with the name API_KEY <br>
-reference for setting environment variable in linux (https://www.redhat.com/sysadmin/linux-environment-variables) <br>
+Get the youtube data v3 api key from (https://console.developers.google.com/apis/) and set a environment variable with the name API_KEY <br>
+Reference for setting environment variable in linux (https://www.redhat.com/sysadmin/linux-environment-variables) <br>
 and for windows (https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0)
 
 
-</br>
-make a python alias by typing 
-``alias humdrum="python3 (location of file cli.py)" in terminal`` <br>
-no need to create alias if you download this package using pip
+<br>
+Make a python alias by typing 
+   
+    alias humdrum="python3 (location of file cli.py)" in terminal
+
+<br>
+No need to create alias if you download this package using pip
 
 **using** 
 --------  
-type ``humdrum --help`` in terminal <br>
-this will guide you through the process
+Type ``humdrum --help`` in terminal <br>
+This will guide you through the process
 
 ```
 humdrum --help
