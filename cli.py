@@ -1,3 +1,8 @@
+"""
+Interface or rather say api which interacts with terminal and Youtube Data v3 client.
+if perceived as an API than terminal and Api class are two end points
+"""
+
 import click
 from apiclient.discovery import build
 
@@ -17,7 +22,7 @@ from helper import Api
 @click.option("--type", help="to search for type of video like channel video playlist")
 def titles(count, title, order, type):
     """
-    Function which acts as an interface with API wrapper and CLI
+    Function which acts as an interface with API wrapper and CLI.
     obj is the instance of the API class having function
     1 open_id
     2 get_titles
