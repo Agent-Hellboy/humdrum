@@ -73,6 +73,11 @@ process
        --type TEXT      to search for type of video like channel video playlist
        --help           Show this message and exit.
 
+**demo**
+
+.. image:: humdrum.gif
+
+
 **Contributing**
 ----------------
 
