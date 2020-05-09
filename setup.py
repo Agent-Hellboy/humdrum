@@ -8,12 +8,12 @@ def read(fname):
 
 setup(
     name="humdrum",
-    version="0.5",
+    version="0.7",
     author="Prince Roshan",
     author_email="princekrroshan01@gmail.com",
     url="https://github.com/princekrroshan01/humdrum",
     description=("A  CLI tool for youtube data api v3"),
-    long_description=read("README.md"),
+    long_description=read("README.rst"),
     license="MIT",
     py_modules=["helper", "cli"],
     entry_points={"console_scripts": ["humdrum = cli:titles"]},

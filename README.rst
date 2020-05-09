@@ -26,7 +26,15 @@ Or from git:
     source venv/bin/activate
     pip install -r requirements.txt
       
-      
+**General Info**
+
+::
+
+    Why Two option to download
+
+    if you install using pip than it create a binary/executable in /usr/bin folder.
+    You could locate it using locate command line utility of unix/linux.
+    if You want to avoid this clone the repo and create an alias.
 
 **Prerequisites**
 -----------------
@@ -43,7 +51,7 @@ windows
 
 ::
 
-    alias humdrum="python3 (location of file cli.py)" in terminal
+ alias humdrum="python3 (location of file cli.py)" in terminal
 
  No need to create alias if you download this package using pip
 
