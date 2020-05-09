@@ -1,6 +1,9 @@
 """
 Interface or rather say api which interacts with terminal and Youtube Data v3 client.
-if perceived as an API than terminal and Api class are two end points
+if perceived as an API than terminal and Api class are two end points.
+
+document the script's function and command line syntax, environment variables, and files.
+
 """
 
 import click
@@ -42,7 +45,7 @@ def ffcall(option, obj, vid):
     """
     helper function to choose between 2 function to call i.e. get_description and open_id
     """
-
+    print(option,vid)
     if option == 0:
         des = obj.get_descriptions()  # function to get description of the video
         print(des[vid])

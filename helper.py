@@ -13,7 +13,7 @@ class Api:
     Class which acts as a client to the youtube data v3 API,
     having attributes as the query parameter for API.
     """
-
+    
     maxlen: Any
 
     def __init__(self, keyword, maxlen, order="relevance", type="video"):
@@ -41,15 +41,13 @@ class Api:
 
     def open_id(self, item_no):
         """"Opens the video in default browser of the system."""
-
         return webbrowser.open(
             "https://www.youtube.com/watch?v="
             + self.result["items"][item_no]["id"]["videoId"]
-        )
+            )
 
     def get_titles(self):
         """"Returns a list with title of the videos."""
-
         rslt = []
 
         for i in range(self.maxlen):
@@ -59,7 +57,6 @@ class Api:
 
     def get_descriptions(self):
         """"Return list with description of the video."""
-
         rslt = []
 
         for i in range(self.maxlen):
@@ -68,12 +65,9 @@ class Api:
         return rslt
 
     def get_image_urls(self):
-
         """
-        Function to get the image url which will be used for retriving the icon image of
-        the youtube video.
+        Returns a list of image urls.
         """
-
         rslt = []
 
         for _ in range(self.maxlen):
