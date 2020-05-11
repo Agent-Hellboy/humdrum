@@ -30,9 +30,9 @@ Or from git:
 
 ::
 
-    Why Two option to download
+    Why two options to download
 
-    if you install using pip than it create a binary/executable in /usr/bin folder.
+    if you install using pip then it creates a binary/executable in /usr/bin folder.
     You could locate it using locate command line utility of unix/linux.
     if You want to avoid this clone the repo and create an alias.
 
