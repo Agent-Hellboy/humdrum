@@ -19,7 +19,7 @@ class Api:
     def __init__(self, keyword, maxlen, order="relevance", type="video"):
         try:
             self.__API_KEY = os.environ.get(
-                "AIzaSyA_3CuPVAJaCSoylnWxacqeYnAgXFt74ow"
+                "API_KEY"
             )  # link to get the api key is in readme file
         except Exception:
             raise TypeError("You must have API_KEY set as an environment variable")
