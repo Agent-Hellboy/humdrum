@@ -88,8 +88,8 @@ humdrum --title "python tutorial" --count 5 --order viewCount
 
 Demo
 ----
+![humdrum (1)](https://github.com/user-attachments/assets/ad56916e-8b13-4071-aa93-8d3430af2a83)
 
-![humdrum (1)](https://github.com/user-attachments/assets/c8c25cef-062d-43b8-b9bb-c113a11c934b)
 
 E. Contributing
 ------------
